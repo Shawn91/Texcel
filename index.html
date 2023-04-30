@@ -12,9 +12,11 @@
 <header>
     <div class="container">
         <h1>Texcel</h1>
+        <p class="contact-email"><span>Contact: </span>
+            <a href="javascript:location='mailto:\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0063\u006f\u006d')</script></a>
+        </p>
     </div>
 </header>
-
 <div class="gray-background">
     <div class="container big-vertical-padding">
         <div class="slogan">
@@ -118,8 +120,26 @@
         text-align: center;
     }
 
-    header > .container {
+    header {
         height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-email {
+        margin: 0;
+        align-self: flex-end;
+        font-size: 18px;
+        color: #99979c;
+    }
+
+    .contact-email a:hover {
+        color: #007bff
+    }
+
+    .contact-email a {
+        text-decoration: none;
+        color: #99979c;
     }
 
     .title {
