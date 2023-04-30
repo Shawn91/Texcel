@@ -2,9 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description"
+          content="Texcel is a powerful text editor that transforms your  rich or plain text and tables in a fast and reliable way. It edits text and tables inplace.">
+    <meta name="keywords"
+          content="Texcel,textsoap for windows, text editor, text manipulation, text processor, table editor, table manipulation, table processor, edit text in other software, office productivity">
+    <title>Texcel - Your text manipulator as powerful as Excel</title>
 </head>
 <body>
-<p>test</p>
+<header>
+    <div class="container">
+        <h1>Texcel</h1>
+    </div>
+</header>
+
+<div class="gray-background">
+    <div class="container big-vertical-padding">
+        <div class="slogan">
+            <div class="title"><p>A text/table manipulator</p>
+                <p>as powerful as Excel</p></div>
+            <div class="btn" onclick="handleDownload()">Download for Windows (Beta)</div>
+            <div class="download-note">MacOS and Linux versions are on the way.</div>
+        </div>
+        <div class="intro-video">
+            <iframe src="https://www.youtube.com/embed/ZtqBQ68cfJc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="light-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Directly edit text in other software</p>
+        <p class="feature-note">Long-press the middle mouse button to activate</p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
+<div class="gray-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Powerful and versatile search function</p>
+        <p class="feature-note">Exact, fuzzy, regex, and even semantic match</p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
+<div class="light-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Replace text by dictionary</p>
+        <p class="feature-note">Bulk replacement of various keywords made at once</p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
+<div class="gray-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Manipulate text in table</p>
+        <p class="feature-note">Edit table like it's plain text</p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
+<div class="light-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Transform entire text with one click</p>
+        <p class="feature-note">More 'one click transformers' on the way with each update</p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
+<div class="gray-background">
+    <div class="container flex-column small-vertical-padding">
+        <p class="feature">Hide paragraphs without matches</p>
+        <p class="feature-note">Remove the clutter in search result </p>
+        <div class="feature-video">
+            <iframe></iframe>
+        </div>
+    </div>
+</div>
 </body>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+    }
+
+    .gray-background {
+        background-color: #f1f2f6;
+    }
+
+    .light-background {
+        background-color: #fff;
+    }
+
+    .container {
+        max-width: 1056px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header > .container {
+        height: 80px;
+    }
+
+    .title {
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    .big-vertical-padding {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .small-vertical-padding {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-right: 20px;
+        height: 100%;
+    }
+
+    .intro-video iframe {
+        border-radius: 7px;
+        cursor: pointer;
+        height: 315px;
+        width: 560px;
+    }
+
+    .btn {
+        margin-top: 50px;
+        padding: 12px 24px;
+        background-color: #212529;
+        color: #fff;
+        border-color: #212529;
+        border-width: 1px;
+        border-radius: 6px;
+        font-size: 22px;
+        font-weight: 400;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: #424649;
+        color: #fff;
+        border-color: #373b3e;
+    }
+
+    .btn:active {
+        color: #fff;
+        background-color: #4d5154;
+        border-color: #373b3e;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    }
+
+    .download-note {
+        margin-top: 10px;
+        text-align: center;
+        color: rgba(108, 117, 125, 0.9)
+    }
+
+    .feature {
+        font-size: 34px;
+        color: #172b4d;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .feature-note {
+        font-size: 20px;
+        color: #505f79;
+        margin-top: 0px
+    }
+
+    .feature-video {
+        height: 500px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .feature-video iframe {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #e66b57;
+    }
+
+
+</style>
 </html>
