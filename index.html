@@ -133,6 +133,11 @@
             box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
         }
 
+        .btn > a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         .download-note {
             margin-top: 10px;
             text-align: center;
@@ -190,7 +195,11 @@
         <div class="slogan">
             <div class="title"><p>A text/table manipulator</p>
                 <p>as powerful as Excel</p></div>
-            <div class="btn" onclick="handleDownload()">Download for Windows (Alpha)</div>
+            <div class="btn">
+                <a href="https://github.com/Shawn91/Texcel/releases/download/v0.1.0/Texcel.zip">
+                    Download for Windows (Alpha)
+                </a>
+            </div>
             <div class="download-note">Note: the software is in alpha stage meaning it may not be reliable.</div>
             <div class="download-note">MacOS and Linux versions are on the way.</div>
         </div>
