@@ -20,6 +20,16 @@
             margin: 0;
         }
 
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            flex: 1;
+        }
+
         h1 {
             margin: 0;
         }
@@ -45,10 +55,16 @@
             text-align: center;
         }
 
-        header {
+        header, footer {
             height: 80px;
             display: flex;
             align-items: center;
+        }
+
+        footer {
+            justify-content: center;
+            text-decoration: underline;
+            color: #0969da;
         }
 
         .contact-email {
@@ -174,114 +190,126 @@
 
     <meta charset="UTF-8">
     <meta name="description"
-          content="Texcel is a powerful text editor that transforms your  rich or plain text and tables in a fast and reliable way. It edits text and tables inplace.">
+          content="Texcel is a powerful text editor that transforms your rich or plain text and tables in a fast and reliable way. It edits text and tables inplace.">
     <meta name="keywords"
           content="Texcel,textsoap for windows, text editor, text manipulation, text processor, table editor, table manipulation, table processor, edit text in other software, office productivity">
     <title>Texcel - Your text manipulator as powerful as Excel</title>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>Texcel</h1>
-        <p class="contact-email"><span>Contact: </span>
-            <a href="javascript:location='mailto:\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0063\u006f\u006d';void 0">
-                <script type="text/javascript">document.write('\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0063\u006f\u006d')</script>
-            </a>
-        </p>
-    </div>
-</header>
-<div class="gray-background">
-    <div class="container big-vertical-padding">
-        <div class="slogan">
-            <div class="title"><p>A text/table manipulator</p>
-                <p>as powerful as Excel</p></div>
-            <div class="btn">
-                <a href="https://github.com/Shawn91/Texcel/releases/download/v0.1.0/Texcel.zip">
-                    Download for Windows (Alpha)
-                </a>
+<div class="page">
+    <div class="main">
+        <header>
+            <div class="container">
+                <h1><a href="index.html" style="color: inherit;text-decoration:none">Texcel</a></h1>
+                <p class="contact-email"><span>Contact: </span>
+                    <a href="javascript:location='mailto:\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0061\u0070\u0070';void 0">
+                        <script type="text/javascript">document.write('\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u0074\u0065\u0078\u0063\u0065\u006c\u002e\u0061\u0070\u0070')</script>
+                    </a>
+                </p>
             </div>
-            <div class="download-note">Note: the software is in alpha stage meaning it may not be reliable.</div>
-            <div class="download-note">MacOS and Linux versions are on the way.</div>
+        </header>
+        <div class="gray-background">
+            <div class="container big-vertical-padding">
+                <div class="slogan">
+                    <div class="title"><p>A text/table manipulator</p>
+                        <p>as powerful as Excel</p></div>
+                    <div class="btn">
+                        <a href="https://github.com/Shawn91/Texcel/releases/download/v0.1.0/Texcel.zip">
+                            Download for Windows (Alpha)
+                        </a>
+                    </div>
+                    <div class="download-note">Note: the software is in alpha stage meaning it may not be reliable.
+                    </div>
+                    <div class="download-note">MacOS and Linux versions are on the way.</div>
+                </div>
+                <div class="intro-video">
+                    <iframe src="https://www.youtube.com/embed/-1_EpUaDNn8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-        <div class="intro-video">
-            <iframe src="https://www.youtube.com/embed/-1_EpUaDNn8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+        <div class="light-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Transform entire text with one click</p>
+                <p class="feature-note">More 'one click transformers' on the way with each update</p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/ed8fgtjySYc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="gray-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Directly edit text in other software</p>
+                <p class="feature-note">Long-press the middle mouse button to activate</p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/PHzsnf-8OmY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="light-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Powerful and versatile search function</p>
+                <p class="feature-note">Exact, fuzzy, regex, and even semantic search (on the way)</p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/_TiPxGTi_Eg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="gray-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Hide paragraphs without matches</p>
+                <p class="feature-note">Remove the clutter in search result </p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/0CMEu4tTKZQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="light-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Replace text by dictionary</p>
+                <p class="feature-note">Bulk replacement of various keywords made at once</p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/rsZDv0AV7r8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="gray-background">
+            <div class="container flex-column small-vertical-padding">
+                <p class="feature">Manipulate text in table</p>
+                <p class="feature-note">Edit table like it's plain text</p>
+                <div class="feature-video">
+                    <iframe src="https://www.youtube.com/embed/l7pUkLgZxw8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="light-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Transform entire text with one click</p>
-        <p class="feature-note">More 'one click transformers' on the way with each update</p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/ed8fgtjySYc"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+    <footer>
+        <div class="container">
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
         </div>
-    </div>
-</div>
-<div class="gray-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Directly edit text in other software</p>
-        <p class="feature-note">Long-press the middle mouse button to activate</p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/PHzsnf-8OmY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-<div class="light-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Powerful and versatile search function</p>
-        <p class="feature-note">Exact, fuzzy, regex, and even semantic search (on the way)</p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/_TiPxGTi_Eg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-<div class="gray-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Hide paragraphs without matches</p>
-        <p class="feature-note">Remove the clutter in search result </p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/0CMEu4tTKZQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-<div class="light-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Replace text by dictionary</p>
-        <p class="feature-note">Bulk replacement of various keywords made at once</p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/rsZDv0AV7r8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-<div class="gray-background">
-    <div class="container flex-column small-vertical-padding">
-        <p class="feature">Manipulate text in table</p>
-        <p class="feature-note">Edit table like it's plain text</p>
-        <div class="feature-video">
-            <iframe src="https://www.youtube.com/embed/l7pUkLgZxw8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
+    </footer>
 </div>
 </body>
 </html>
